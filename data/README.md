@@ -6,7 +6,7 @@ The data folder is structured as below:
 
 ### scene config
 
-`scene_config.json` defines each scene, which is a list of dict. For example:
+`scene_config.json` defines all original-transformed scene pairs, which is a list of dict. one dict defines one pair. For example:
 
 ```python
     "obj_A": {
@@ -27,8 +27,8 @@ The data folder is structured as below:
     }
 ```
 
-means the dynamic object `obj_A` forms three scenes: time=0 as the original one and time=3 as the transformed one; time=0 as the original one and time=22 as the transformed one; time=0 as the original one and time=34 as the transformed one.
+means the dynamic object `obj_A` forms three original-transformed scene pairs: time=0 or 3 as the original/transformed scene, time=0 or 22, time=0 or 34.
 
 ### rendering code
 
-blender.py is a sample script to render our data loading glb files. you can change it to render your own.
+blender.py is a sample script to render views surrounding the object loading glb files and specify the timestep. you can change it to render your own.
