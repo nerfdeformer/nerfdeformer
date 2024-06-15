@@ -32,15 +32,16 @@ means the dynamic object `obj_A` forms three original-transformed scene pairs: t
 ### frames
 
 `frames/original_nerf_views/{s}_{t}/{id}.png`: frames of the object `s` at the original time `t`.
+
 `frames/original_nerf_views/{s}_{t}/transforms.json`: camera parameters of original frames.
 
+
 `frames/frames/transformed_views/{s}_{t2}/transformed_view/{id}.png`: transformed rgb view of the object `s` at the transformed time `t2`.
+
 `frames/frames/transformed_views/{s}_{t2}/transformed_view/{id}_depth.npy`: transformed depth view.
+
 `frames/frames/transformed_views/{s}_{t2}/transformed_view/transforms.json`: camera parameters of the transformed view.
 
-`frames/frames/transformed_views/{s}_{t2}/transformed_view/{id}.png`: transformed rgb view of the transformed object `s` at time `t2`.
-`frames/frames/transformed_views/{s}_{t2}/transformed_view/{id}_depth.npy`: transformed depth view.
-`frames/frames/transformed_views/{s}_{t2}/transformed_view/transforms.json`: camera parameters of the transformed view.
 
 `frames/frames/transformed_views/{s}_{t2}/evaluations/`: 30 other rgbd views and camera parameters rendered surrounding `s` at time `t2`, which are what used to evaluate in our paper.
 
