@@ -2,11 +2,11 @@
 
 ## Data
 
-please check [data](https://github.com/nerfdeformer/nerfdeformer/blob/main/data) for more datails
+please check [data](https://github.com/nerfdeformer/nerfdeformer/blob/main/data) for more datails.
 
 ## our evaluations
 
-we put our new view synthesis and geometry results in [our_evaluations](https://github.com/nerfdeformer/nerfdeformer/blob/main/our_evaluations). please check there for more details.
+we put our new view synthesis and geometry results in [our_evaluations](https://github.com/nerfdeformer/nerfdeformer/blob/main/our_evaluations).
 
 ## code
 
