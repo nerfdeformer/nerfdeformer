@@ -6,8 +6,9 @@ The data folder is structured as below:
 
 ### scene config
 
-    '''scene_config.py''' defines 
-    "0e1d129e893c4ea18d82efb2ee152a1c": {
+    `scene_config.json` defines each scene, which is a list of dict. For example:
+    '''python
+    "obj_A": {
         "src_tgt_pair": [
             [
                 0,
@@ -21,13 +22,10 @@ The data folder is structured as below:
                 0,
                 34
             ]
-        ],
-        "tgt_pose_id": [
-            174,
-            174,
-            174
         ]
     },
+    '''
+    means the dynamic object `obj_A` forms three scenes: time=0 as the original one and time=3 as the transformed one; time=0 as the original one and time=22 as the transformed one; time=0 as the original one and time=34 as the transformed one.
 
 ### rendering code
 
