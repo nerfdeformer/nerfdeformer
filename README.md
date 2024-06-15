@@ -6,7 +6,7 @@ please check [data](https://github.com/nerfdeformer/nerfdeformer/blob/main/data)
 
 ## our evaluations
 
-we put our new view synthesis and geometry results in [our_evaluations](https://github.com/nerfdeformer/nerfdeformer/blob/main/our_evaluations).
+we put our full new view synthesis and geometry results in [our_evaluations](https://github.com/nerfdeformer/nerfdeformer/blob/main/our_evaluations).
 
 ## code
 
