@@ -14,4 +14,14 @@ The code is separated to three parts: dense **correspondence matching**, **embed
 
 They are located in [src/correspondence_matching](), [src/EDG]() and [src/NeRF]().
 
+### correspondence matching
+
+#### filtering
+
+### Embbeded deformation graph
+
+### NeRF
+
+the full code for training the original NeRF and rendering from the transformed NeRF is coming soon. We are 
+
 Our code is based on [ASpanFormer](https://github.com/apple/ml-aspanformer), [Nonrigid-ICP](https://github.com/rabbityl/Nonrigid-ICP-Pytorch) and [NeRFStudio](https://github.com/nerfstudio-project/nerfstudio) respectively. Thanks a lot to these great codebases!
