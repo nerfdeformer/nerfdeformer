@@ -9,22 +9,22 @@ The data folder is structured as below:
 `scene_config.json` defines each scene, which is a list of dict. For example:
 
 '''python
-"obj_A": {
-    "src_tgt_pair": [
-        [
-            0,
-            3
-        ],
-        [
-            0,
-            22
-        ],
-        [
-            0,
-            34
+    "obj_A": {
+        "src_tgt_pair": [
+            [
+                0,
+                3
+            ],
+            [
+                0,
+                22
+            ],
+            [
+                0,
+                34
+            ]
         ]
-    ]
-},
+    }
 '''
 
 means the dynamic object `obj_A` forms three scenes: time=0 as the original one and time=3 as the transformed one; time=0 as the original one and time=22 as the transformed one; time=0 as the original one and time=34 as the transformed one.
