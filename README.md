@@ -24,6 +24,7 @@ Then run the following commands to do matching on the sample data.
 
 ```python
 cd src/correspondence_matching/demo
+
 python match.py --img0_path "../../data_sample/transformed_view.png" --img1_path ../../data_sample/original_views/ --out_path ../../matching_output/ --long_dim0 800 --long_dim1 800
 ```
 
