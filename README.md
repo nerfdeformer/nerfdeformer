@@ -40,11 +40,9 @@ python filter_2d.py --original-view ../../data_sample/original_views/ --transfor
 python filter_3d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view.png --filter_2d_output ../../matching_filtered --out-path ../../matching_filtered
 ```
 
-#### filtering
-
-Here we provide  
-
 ### Embbeded deformation graph
+
+The EDG optimization's code is based on [Nonrigid-ICP](https://github.com/rabbityl/Nonrigid-ICP-Pytorch). Please 
 
 ### NeRF
 
@@ -52,4 +50,19 @@ Run `conda install --file src/NeRF/environment.yaml` to install the conda virtua
 
 Here we provide the code that defines the forward flow to bend rays for NeRF rendering in the transformed scene. The full code for training the original NeRF and rendering from the transformed NeRF is coming soon. 
 
+## Acknowledgement
+
 Our code is based on [ASpanFormer](https://github.com/apple/ml-aspanformer), [Nonrigid-ICP](https://github.com/rabbityl/Nonrigid-ICP-Pytorch) and [NeRFStudio](https://github.com/nerfstudio-project/nerfstudio) respectively. Thanks a lot to these great codebases!
+
+## Citation
+If you find our work useful in your project, please cite the following:
+
+```
+@inproceedings{tang2024nerfdeformer,
+  title={NeRFDeformer: NeRF Transformation from a Single View via 3D Scene Flows},
+  author={Tang, Zhenggang and Ren, Zhongzheng and Zhao, Xiaoming and Wen, Bowen and Tremblay, Jonathan and Birchfield, Stan and Schwing, Alexander},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10293--10303},
+  year={2024}
+}
+```
