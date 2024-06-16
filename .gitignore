@@ -1,1 +1,11 @@
 src/matching_output
+.vscode/
+__pycache__/
+*.pyc
+*.DS_Store
+*.swp
+*.pth
+tmp.*
+*/.ipynb_checkpoints/*
+*.png
+*.npy

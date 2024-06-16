@@ -10,9 +10,9 @@ we put our full new view synthesis and geometry results in [our_evaluations](htt
 
 ## code
 
-The code is separated to three parts: dense correspondence **matching**, **embedded deformation graph** (EDG) optimization, NeRF **new view synthesis in transformed scene** using EDG as deformation field. We have a data_sample for inference
+The code is separated to three parts: dense correspondence **matching**, **embedded deformation graph** (EDG) optimization, NeRF **new view synthesis in transformed scene** using EDG as deformation field. We have a data sample for inference, which can be downloaded [here](). please unzip it in `src/data_sample` before running our code.
 
-They are located in [src/correspondence_matching](), [src/EDG]() and [src/NeRF]().
+They are located in [src/correspondence_matching](https://github.com/nerfdeformer/nerfdeformer/blob/main/src/correspondence_matching), [src/EDG](https://github.com/nerfdeformer/nerfdeformer/blob/main/src/EDG) and [src/NeRF](https://github.com/nerfdeformer/nerfdeformer/blob/main/src/NeRF).
 
 ### correspondence matching
 

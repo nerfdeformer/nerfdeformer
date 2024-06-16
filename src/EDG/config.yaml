@@ -1,0 +1,9 @@
+iters: 6000
+gpu_mode: True
+lr: 0.01
+deformation_model: ED
+w_silh: 0
+w_ldmk: 1
+w_arap: 1
+w_chamfer: 0
+w_depth: 0
