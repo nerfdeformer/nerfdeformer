@@ -23,9 +23,12 @@ To install the conda virtual environment, run `conda install --file src/correspo
 Then run the following commands to do matching on the sample data.
 
 ```python
+
+conda activate matching
+
 cd src/correspondence_matching/demo
 
-python match.py --img0_path ../../data_sample/transformed_view.png --img1_path ../../data_sample/original_views/ --out_path ../../matching_output/ --long_dim0 800 --long_dim1 800
+python match.py --img0_path ../../data_sample/transformed_view/transformed_view.png --img1_path ../../data_sample/original_views/ --out_path ../../matching_output/ --long_dim0 800 --long_dim1 800
 ```
 
 Then you can check the 2D matching results in `src/matching_output`.
@@ -33,16 +36,30 @@ Then you can check the 2D matching results in `src/matching_output`.
 To filter it in 2D and 3D space, please run 
 
 ```python
+
 cd src/correspondence_matching/filter
 
-python filter_2d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view.png --matching ../../matching_output --out-path ../../matching_filtered
+python filter_2d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view --matching ../../matching_output --out-path ../../matching_filtered
 
-python filter_3d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view.png --filter_2d_output ../../matching_filtered --out-path ../../matching_filtered
+python filter_3d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view --filter_2d_output ../../matching_filtered --out-path ../../matching_filtered
 ```
 
 ### Embbeded deformation graph
 
-The EDG optimization's code is based on [Nonrigid-ICP](https://github.com/rabbityl/Nonrigid-ICP-Pytorch). Please 
+The EDG optimization's code is based on [Nonrigid-ICP](https://github.com/rabbityl/Nonrigid-ICP-Pytorch). 
+
+Run `conda install --file src/EDG/environment.yaml` to install the conda virtual environment.
+
+Run the following command to get the EDG and transformed mesh from filtered 3D correspondences generated in the previous step.
+
+```python
+
+conda activate EDG
+
+cd src/correspondence_matching/EDG
+
+python main.py config.yaml --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view --matching ../../matching_filtered --out-path ../../EDG_output
+```
 
 ### NeRF
 
