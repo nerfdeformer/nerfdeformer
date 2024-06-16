@@ -10,7 +10,7 @@ we put our full new view synthesis and geometry results in [our_evaluations](htt
 
 ## code
 
-The code is separated to three parts: dense correspondence **matching**, correspondence **filtering**, **embedded deformation graph** (EDG) optimization, NeRF **new view synthesis in transformed scene** using EDG as deformation field. We have a data_sample for inference
+The code is separated to three parts: dense correspondence **matching**, **embedded deformation graph** (EDG) optimization, NeRF **new view synthesis in transformed scene** using EDG as deformation field. We have a data_sample for inference
 
 They are located in [src/correspondence_matching](), [src/EDG]() and [src/NeRF]().
 
@@ -25,14 +25,24 @@ Then run the following commands to do matching on the sample data.
 ```python
 cd src/correspondence_matching/demo
 
-python match.py --img0_path "../../data_sample/transformed_view.png" --img1_path ../../data_sample/original_views/ --out_path ../../matching_output/ --long_dim0 800 --long_dim1 800
+python match.py --img0_path ../../data_sample/transformed_view.png --img1_path ../../data_sample/original_views/ --out_path ../../matching_output/ --long_dim0 800 --long_dim1 800
 ```
 
-Then you can check the matching results in `src/matching_output`.
+Then you can check the 2D matching results in `src/matching_output`.
+
+To filter it in 2D and 3D space, please run 
+
+```python
+cd src/correspondence_matching/filter
+
+python filter_2d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view.png --matching ../../matching_output --out-path ../../matching_filtered
+
+python filter_3d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view.png --filter_2d_output ../../matching_filtered --out-path ../../matching_filtered
+```
 
 #### filtering
 
-Here we provide with 
+Here we provide  
 
 ### Embbeded deformation graph
 
