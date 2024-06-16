@@ -22,7 +22,7 @@ To install the conda virtual environment, run `conda install --file src/correspo
 
 Then run the following commands to do matching on the sample data.
 
-```python
+```
 
 conda activate matching
 
@@ -35,7 +35,7 @@ Then you can check the 2D matching results in `src/matching_output`.
 
 To filter it in 2D and 3D space, please run 
 
-```python
+```
 
 cd src/correspondence_matching/filter
 
@@ -52,7 +52,7 @@ Run `conda install --file src/EDG/environment.yaml` to install the conda virtual
 
 Run the following command to get the EDG and transformed mesh from filtered 3D correspondences generated in the previous step.
 
-```python
+```
 
 conda activate EDG
 
