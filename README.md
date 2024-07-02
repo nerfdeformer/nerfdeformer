@@ -1,5 +1,7 @@
 # NeRFDeformer
 
+## Poster [Video](https://www.youtube.com/watch?v=oZsA6i9g_yM&t=1s)
+
 ## Data
 
 please check [data](https://github.com/nerfdeformer/nerfdeformer/blob/main/data) for more datails.
