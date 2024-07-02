@@ -20,7 +20,7 @@ They are located in [src/correspondence_matching](https://github.com/nerfdeforme
 
 Our 2D corrspondence matching code is based on [ASpanFormer](https://github.com/apple/ml-aspanformer). We also use its outdoor pretrained model for inference. We include the pretrained model in the repository. 
 
-To install the conda virtual environment, run `conda install --file src/correspondence_matching/environment.yaml`.
+To install the conda virtual environment, run `conda create env -f src/correspondence_matching/environment.yaml`.
 
 Then run the following commands to do matching on the sample data.
 
@@ -41,13 +41,13 @@ A clean code for two step filtering will come out in the next two weeks! (we hav
 
 The EDG optimization's code is based on [Nonrigid-ICP](https://github.com/rabbityl/Nonrigid-ICP-Pytorch). 
 
-Run `conda install --file src/EDG/environment.yaml` to install the conda virtual environment.
+Run `conda create env -f src/EDG/environment.yaml` to install the conda virtual environment.
 
 A clean code for EDG will come out in the next two weeks! (we have the uncleaned version in `src/EDG`)
 
 ### NeRF
 
-Run `conda install --file src/NeRF/environment.yaml` to install the conda virtual environment.
+Run `conda create env -f src/NeRF/environment.yaml` to install the conda virtual environment.
 
 Here we provide the code that defines the forward flow to bend rays for NeRF rendering in the transformed scene. The full code for training the original NeRF and rendering from the transformed NeRF is coming soon. 
 
