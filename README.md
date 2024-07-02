@@ -20,7 +20,7 @@ They are located in [src/correspondence_matching](https://github.com/nerfdeforme
 
 Our 2D corrspondence matching code is based on [ASpanFormer](https://github.com/apple/ml-aspanformer). We also use its outdoor pretrained model for inference. We include the pretrained model in the repository. 
 
-To install the conda virtual environment, run `conda create env -f src/correspondence_matching/environment.yaml`.
+To install the conda virtual environment, run `conda create env -f src/correspondence_matching/environment.yaml && conda activate matching && pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113`.
 
 Then run the following commands to do matching on the sample data.
 
