@@ -35,16 +35,7 @@ python match.py --img0_path ../../data_sample/transformed_view/transformed_view.
 
 Then you can check the 2D matching results in `src/matching_output`.
 
-To filter it in 2D and 3D space, please run 
-
-```
-
-cd src/correspondence_matching/filter
-
-python filter_2d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view --matching ../../matching_output --out-path ../../matching_filtered
-
-python filter_3d.py --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view --filter_2d_output ../../matching_filtered --out-path ../../matching_filtered
-```
+A clean code for two step filtering will come out in the next two weeks! (we have the uncleaned version in '''src/correspondence_matching/filter''')
 
 ### Embbeded deformation graph
 
@@ -52,16 +43,7 @@ The EDG optimization's code is based on [Nonrigid-ICP](https://github.com/rabbit
 
 Run `conda install --file src/EDG/environment.yaml` to install the conda virtual environment.
 
-Run the following command to get the EDG and transformed mesh from filtered 3D correspondences generated in the previous step.
-
-```
-
-conda activate EDG
-
-cd src/correspondence_matching/EDG
-
-python main.py config.yaml --original-view ../../data_sample/original_views/ --transformed-view ../../data_sample/transformed_view --matching ../../matching_filtered --out-path ../../EDG_output
-```
+A clean code for EDG will come out in the next two weeks! (we have the uncleaned version in '''src/EDG''')
 
 ### NeRF
 
