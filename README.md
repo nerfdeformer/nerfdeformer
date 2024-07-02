@@ -35,7 +35,7 @@ python match.py --img0_path ../../data_sample/transformed_view/transformed_view.
 
 Then you can check the 2D matching results in `src/matching_output`.
 
-A clean code for two step filtering will come out in the next two weeks! (we have the uncleaned version in `src/correspondence_matching/filter')
+A clean code for two step filtering will come out in the next two weeks! (we have the uncleaned version in `src/correspondence_matching/filter`)
 
 ### Embbeded deformation graph
 
@@ -43,7 +43,7 @@ The EDG optimization's code is based on [Nonrigid-ICP](https://github.com/rabbit
 
 Run `conda install --file src/EDG/environment.yaml` to install the conda virtual environment.
 
-A clean code for EDG will come out in the next two weeks! (we have the uncleaned version in `src/EDG')
+A clean code for EDG will come out in the next two weeks! (we have the uncleaned version in `src/EDG`)
 
 ### NeRF
 
